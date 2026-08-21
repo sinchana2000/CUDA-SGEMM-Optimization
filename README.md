@@ -12,11 +12,6 @@ library speed on an NVIDIA T4 and benchmarked against cuBLAS.
 | reg1d (1D register tiling) | 1,837 | 42% |
 | cuBLAS | 4,421 | 100% |
 
-A 2D register-tiling kernel (`reg2d`) is also included; run the benchmark to fill
-in its number. All kernels are verified correct against a CPU/cuBLAS reference.
-
-![GFLOP/s by kernel](gemm_gflops.png)
-
 ## Run it
 
 Open `cuda_gemm_colab.ipynb` in Google Colab, set the runtime to a T4 GPU, and run
